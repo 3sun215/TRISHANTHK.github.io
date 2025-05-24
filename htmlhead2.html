@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cre Catering Menu</title>
+  <style>
+    body {
+      font-family: Times New Roman, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .menu-section {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .menu-section h1 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .menu-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .menu-items {
+      text-align: left;
+    }
+
+    .menu-items h3 {
+      margin: 10px 0 5px;
+    }
+
+    .menu-items p {
+      margin: 0 0 15px;
+    }
+
+    .price {
+      float: right;
+    }
+
+    .menu-image img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Cre Catering</strong></div>
+    <nav>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="menu-section">
+    <h1>Our Menu</h1>
+    <div class="menu-content">
+      <div class="menu-items">
+        <h3>Bread Basket <span class="price">5.50</span></h3>
+        <p>Assortments of fresh baked fruit breads and muffins</p>
+
+        <h3>Belgian Waffle <span class="price">7.50</span></h3>
+        <p>Vanilla flavored batter with malted flour</p>
+      </div>
+      <div class="menu-image">
+        <img src="food.jpg" alt="Menu Item Image">
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

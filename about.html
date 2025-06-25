@@ -30,11 +30,27 @@
   </p>
 
   <h2>Our Mission</h2>
-  <p>
-    Our mission is to deliver high-quality, inclusive, and transformative education that empowers students to reach their full potential. 
-    We are committed to fostering a vibrant academic environment that nurtures critical thinking, creativity, ethical leadership, and lifelong learning. 
-    Through cutting-edge research, community engagement, and global partnerships, Global University strives to make a meaningful impact on society.
-  </p>
+ <p id="mission">Our mission is to empower students... <span id="dots">...</span><span id="more" style="display:none;">through advanced teaching, global research, and real-world experience.</span></p>
+<button onclick="toggleReadMore()">Read More</button>
+
+<script>
+  function toggleReadMore() {
+    const dots = document.getElementById("dots");
+    const moreText = document.getElementById("more");
+    const btn = event.target;
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.textContent = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.textContent = "Read Less";
+    }
+  }
+</script>
+
 </section>
 
   </main>
